@@ -112,50 +112,6 @@ Report Page ──► fn_build_report_query ──► mssql_energy_report ──
 
 ---
 
-## Device List
-
-16 devices connected via a single Modbus TCP gateway (Slave IDs 8–23):
-
-| Slave ID | Device Name |
-|---|---|
-| 8 | Main Incomer |
-| 9 | Lift and Common |
-| 10 | Motor |
-| 11 | First Floor A |
-| 12 | First Floor B |
-| 13 | Second Floor A |
-| 14 | Second Floor B |
-| 15 | Third Floor A |
-| 16 | Third Floor B |
-| 17 | 4-A [LASER] |
-| 18 | 4-B [SCANNING] |
-| 19 | Fifth Floor A |
-| 20 | Fifth Floor B |
-| 21 | Fifth Floor C |
-| 22 | Sixth Floor A |
-| 23 | Sixth Floor B |
-
----
-
-## Modbus Register Map
-
-Read block starts at address **100** (register 40101), quantity **58**. All values are 32-bit IEEE 754 floats (2 registers each, Big-Endian ABCD word order).
-
-| Parameter | Register | Array Offset |
-|---|---|---|
-| KWh | 40101 | regs[0], regs[1] |
-| PF Average | 40117 | regs[16], regs[17] |
-| KVAh | 40125 | regs[24], regs[25] |
-| Voltage R | 40143 | regs[42], regs[43] |
-| Voltage Y | 40145 | regs[44], regs[45] |
-| Voltage B | 40147 | regs[46], regs[47] |
-| Current R | 40151 | regs[50], regs[51] |
-| Current Y | 40153 | regs[52], regs[53] |
-| Current B | 40155 | regs[54], regs[55] |
-| Frequency | 40157 | regs[56], regs[57] |
-
----
-
 ## Database Schema
 
 The flow writes to a pre-existing `DATA` table. Key columns:
