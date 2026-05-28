@@ -1,0 +1,14 @@
+{
+    "name": "energy-meter-ems",
+    "description": "Jetpace Energy Meter EMS",
+    "version": "1.0.0",
+    "private": true,
+    "dependencies": {
+        "@flowfuse/node-red-dashboard": "~1.30.2",
+        "node-red": "^4.0.9",
+        "node-red-contrib-modbus": "~5.45.2",
+        "node-red-contrib-mssql-plus": "~0.13.1",
+        "node-red-node-email": "~5.2.3",
+        "systray2": "^2.1.4"
+    }
+}
