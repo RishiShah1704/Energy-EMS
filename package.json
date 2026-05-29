@@ -5,6 +5,7 @@
     "private": true,
     "dependencies": {
         "@flowfuse/node-red-dashboard": "~1.30.2",
+        "html-pdf-node": "^1.0.8",
         "node-red": "^4.0.9",
         "node-red-contrib-modbus": "~5.45.2",
         "node-red-contrib-mssql-plus": "~0.13.1",
