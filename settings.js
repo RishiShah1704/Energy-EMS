@@ -53,4 +53,8 @@ module.exports = {
 
     functionExternalModules: true,
 
+    functionGlobalContext: {
+        nrUserDir: require('path').join(__dirname)
+    },
+
 }
